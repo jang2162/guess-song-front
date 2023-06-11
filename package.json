@@ -1,0 +1,68 @@
+{
+  "name": "guess-song-front",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@apollo/client": "^3.7.5",
+    "clone": "^2.1.2",
+    "cross-env": "^7.0.3",
+    "dayjs": "^1.11.8",
+    "graphql": "^16.6.0",
+    "gsap": "^3.12.1",
+    "next": "^13.4.5",
+    "polished": "^4.2.2",
+    "postcss-nesting": "^11.2.2",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-spring": "^9.7.1",
+    "recoil": "^0.7.7",
+    "set-cookie-parser": "^2.6.0",
+    "styled-components": "^6.0.0-rc.3",
+    "tailwindcss": "^3.3.2"
+  },
+  "scripts": {
+    "dev": "next dev",
+    "generate": "graphql-codegen",
+    "build": "next build",
+    "init": "graphql-codegen && next build",
+    "start": "next start"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ],
+  "devDependencies": {
+    "@graphql-codegen/add": "^5.0.0",
+    "@graphql-codegen/cli": "^4.0.1",
+    "@graphql-codegen/introspection": "^4.0.0",
+    "@graphql-codegen/typescript": "^4.0.0",
+    "@graphql-codegen/typescript-operations": "^4.0.0",
+    "@graphql-codegen/typescript-react-apollo": "^3.3.7",
+    "@next/eslint-plugin-next": "^13.4.5",
+    "@types/clone": "^2.1.1",
+    "@types/node": "^18.11.18",
+    "@types/react": "^18.2.11",
+    "@types/react-dom": "^18.2.4",
+    "@types/set-cookie-parser": "^2.4.2",
+    "@typescript-eslint/eslint-plugin": "^5.49.0",
+    "@typescript-eslint/parser": "^5.49.0",
+    "autoprefixer": "^10.4.14",
+    "eslint": "^8.42.0",
+    "eslint-config-next": "^13.1.5",
+    "eslint-config-prettier": "^8.6.0",
+    "eslint-plugin-import": "^2.27.5",
+    "eslint-plugin-jsdoc": "^39.6.8",
+    "eslint-plugin-prefer-arrow": "^1.2.3",
+    "eslint-plugin-react": "^7.32.1",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "postcss": "^8.4.24",
+    "react-scripts": "^5.0.1",
+    "stailwc": "^0.17.0",
+    "typescript": "^5.1.3"
+  }
+}

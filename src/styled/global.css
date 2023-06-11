@@ -1,0 +1,12 @@
+@import "./css/normalize.css";
+@import "./css/init.css";
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+div {
+  & > span {
+    font-weight: bold;
+  }
+}

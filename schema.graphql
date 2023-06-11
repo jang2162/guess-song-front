@@ -1,0 +1,80 @@
+# This file was generated based on ".graphqlconfig". Do not edit manually.
+
+schema {
+    query: Query
+    mutation: Mutation
+}
+
+type CursorPageInfo {
+    hasMore: Boolean!
+    next: String
+    prev: String
+    totalCount: Int!
+}
+
+type Mutation {
+    authentication(id: String!, pw: String!): String
+    insertTempPost(content: String!, title: String!, writerId: Int!): Void
+    insertTempUser(birth: Date!, name: String!): Void
+    invalidate: String
+    refreshToken: String
+}
+
+type Query {
+    nowDate: Date
+    nowDateArr: [Date]
+    nowDateArrNN: [Date]!
+    nowDateNN: Date!
+    nowDateNNArr: [Date!]
+    nowDateNNArrNN: [Date!]!
+    nowDatetime: Datetime
+    nowTimestamp: Timestamp
+    selectPostById(id: Int!): TempPost!
+    selectPosts: [TempPost!]!
+    selectUserById(id: Int!): TempUser!
+    selectUsers: [TempUser!]!
+}
+
+type TempPost {
+    content: String!
+    id: ID!
+    postId: Int!
+    regDate: Date!
+    title: String!
+    writer: TempUser!
+    writerId: Int!
+}
+
+type TempUser {
+    birth: Date!
+    id: ID!
+    name: String!
+    posts: [TempPost!]!
+    userId: Int!
+}
+
+type accessToken {
+    token: String!
+}
+
+"Date scalar type"
+scalar Date
+
+"Datetime scalar type"
+scalar Datetime
+
+"Timestamp scalar type"
+scalar Timestamp
+
+"Represents NULL values"
+scalar Void
+
+input CursorPageInput {
+    cursor: String
+    size: Int
+}
+
+input OffsetPageInput {
+    pageIndex: Int
+    size: Int
+}
